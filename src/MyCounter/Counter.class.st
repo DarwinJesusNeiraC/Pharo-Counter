@@ -48,3 +48,19 @@ Counter >> count [
 Counter >> count: c [
 	count :=c
 ]
+
+{ #category : #accessing }
+Counter >> decrement [
+	count := count - 1
+]
+
+{ #category : #accessing }
+Counter >> increment [
+   count:= count + 1
+]
+
+{ #category : #accessing }
+Counter >> initialize [ 
+ "set the initial value to 0"
+	self count: 0
+]
