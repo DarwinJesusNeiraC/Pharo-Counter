@@ -64,3 +64,8 @@ Counter >> initialize [
  "set the initial value to 0"
 	self count: 0
 ]
+
+{ #category : #accessing }
+Counter >> startingAt: anInteger [
+	^ self new count: anInteger.
+]
